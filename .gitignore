@@ -55,7 +55,7 @@ nunit-*.xml
 dlldata.c
 
 # .vscode file
-.vscode/
+.vscode/*
 
 # Benchmark Results
 BenchmarkDotNet.Artifacts/
