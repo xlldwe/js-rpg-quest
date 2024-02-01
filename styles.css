@@ -1,0 +1,85 @@
+body {
+    background-image: url("images/town-bg.webp");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: background-image 0.3s ease;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+#text {
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#game {
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 30px 240px;
+    padding: 10px;
+}
+
+#controls,
+#stats {
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #0a0a23;
+}
+
+#monsterStats {
+    display: none;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #c70d0d;
+}
+
+.stat {
+    padding-right: 10px;
+}
+
+button {
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    color: #fff;
+    background-image: linear-gradient(#2980b9, #2938b9);    
+    border: 3px solid #0a0a23;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #game {
+        margin: 0 60px;
+    }
+
+    #text {
+        font-size: 24px;
+    }
+
+    #controls,
+    #stats {
+        font-size: 28px;
+    }
+    
+    button {
+        font-size: 24px;
+    }
+}
